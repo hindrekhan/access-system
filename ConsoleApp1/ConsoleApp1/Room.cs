@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
     abstract class Room : NamePlace
-    {
-        
+    {        
         public List<Job> AccessableJobs;
 
         public abstract void InitializeAccessableJobs();
