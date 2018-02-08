@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    abstract class Room
+    abstract class Room : NamePlace
     {
-        public string Name;
+        
         public List<Job> AccessableJobs;
 
         public abstract void InitializeAccessableJobs();
@@ -19,14 +19,9 @@ namespace ConsoleApp1
             InitializeAccessableJobs();
         }
 
-        public void PrintName(int count)
-        {
-            count++;
-            Console.WriteLine(count + ". " + Name);
-        }
-
         public virtual bool IsAccessible(Job checkJob)
         {
+            //Loops through each job in AccessableJobs and checks if checkjob is the same
             foreach (Job job in AccessableJobs)
                 if (checkJob.Name == job.Name)
                     return true;

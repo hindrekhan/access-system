@@ -6,16 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Job
+    class Job : NamePlace
     {
-        public string Name;
 
-        public void PrintName(int count)
-        {
-            count++;
-            Console.WriteLine(count + ". " + Name);
-        }
-
-        
     }
 }

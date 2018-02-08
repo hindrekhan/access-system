@@ -51,9 +51,11 @@ namespace ConsoleApp1
                 Console.WriteLine("Mis teie amet on?");
                 Console.WriteLine();
 
+                //Prints every job
                 for (int i = 0; i < AllJobs.Count; i++)
                     AllJobs[i].PrintName(i);
 
+                //Asks for user input
                 try
                 {
                     userInput = Int32.Parse(Console.ReadLine());
@@ -66,6 +68,7 @@ namespace ConsoleApp1
                 
                 Console.Clear();
 
+                //Assigns CurrentJob if input is correct
                 if (userInput > 0 && userInput <= AllJobs.Count)
                 {
                     User.CurrentJob = AllJobs[userInput - 1];
@@ -91,11 +94,13 @@ namespace ConsoleApp1
                 Console.WriteLine("Kuhu te soovite minna ?");
                 Console.WriteLine();
 
+                //Prints every room
                 for (int i = 0; i < AllRooms.Count; i++)
                     AllRooms[i].PrintName(i);
 
                 Console.WriteLine((AllRooms.Count + 1) + ". Lahkuge");
 
+                //Asks for user input
                 try
                 {
                     userInput = Int32.Parse(Console.ReadLine());
@@ -108,9 +113,11 @@ namespace ConsoleApp1
 
                 Console.Clear();
 
+                //Check whether user input is equal to leave
                 if (userInput == AllRooms.Count + 1)
                     return;
 
+                //Check whether user input is in range
                 if (userInput > 0 && userInput <= AllRooms.Count)
                     User.AccessRoom(AllRooms[userInput - 1]);
             }

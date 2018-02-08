@@ -50,6 +50,7 @@
     <Compile Include="Jobs\Owner.cs" />
     <Compile Include="Jobs\SeniorDeveloper.cs" />
     <Compile Include="Jobs\SpecialJanitor.cs" />
+    <Compile Include="NamePlace.cs" />
     <Compile Include="Office.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
