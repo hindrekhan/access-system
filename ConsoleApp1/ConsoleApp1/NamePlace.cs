@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    //User by Room and Job cuz they used the same print logic
+    //Used by Room and Job cuz they used the same print logic
 
     class NamePlace
     {
