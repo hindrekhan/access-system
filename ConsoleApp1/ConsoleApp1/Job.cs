@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
+    //Veits tühi noh
     class Job : NamePlace
     {
-
     }
 }
