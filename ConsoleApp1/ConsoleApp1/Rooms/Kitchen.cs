@@ -20,7 +20,6 @@ namespace ConsoleApp1.Rooms
 
         public override void InitializeAccessableJobs()
         {
-            
         }
     }
 }

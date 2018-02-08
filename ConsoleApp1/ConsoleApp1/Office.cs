@@ -21,25 +21,27 @@ namespace ConsoleApp1
 
         void InitializeAllRooms()
         {
-            AllRooms = new List<Room>();
-
-            AllRooms.Add(new Rooms.DataProcessors());
-            AllRooms.Add(new Rooms.Developers());
-            AllRooms.Add(new Rooms.Kitchen());
-            AllRooms.Add(new Rooms.Lobby());
-            AllRooms.Add(new Rooms.Owners());
+            AllRooms = new List<Room>
+            {
+                new Rooms.DataProcessors(),
+                new Rooms.Developers(),
+                new Rooms.Kitchen(),
+                new Rooms.Lobby(),
+                new Rooms.Owners()
+            };
         }
 
         void InitializeAllGroups()
         {
-            AllJobs = new List<Job>();
-
-            AllJobs.Add(new Jobs.DataProcessor());
-            AllJobs.Add(new Jobs.Janitor());
-            AllJobs.Add(new Jobs.JuniorDeveloper());
-            AllJobs.Add(new Jobs.Owner());
-            AllJobs.Add(new Jobs.SeniorDeveloper());
-            AllJobs.Add(new Jobs.SpecialJanitor());
+            AllJobs = new List<Job>
+            {
+                new Jobs.DataProcessor(),
+                new Jobs.Janitor(),
+                new Jobs.JuniorDeveloper(),
+                new Jobs.Owner(),
+                new Jobs.SeniorDeveloper(),
+                new Jobs.SpecialJanitor()
+            };
         }
 
         void AskJob()

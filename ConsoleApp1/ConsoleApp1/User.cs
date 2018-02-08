@@ -20,9 +20,8 @@ namespace ConsoleApp1
         {
             if (room.IsAccessible(CurrentJob))
                 CurrentRoom = room;
-            
             else
-                Console.WriteLine("Teil pole privileege, et sinna siseneda");
+                Console.WriteLine("Teil pole privileege, et sinna siseneda\n");
         }
     }
 }
