@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Jobs
 {
-    class SeniorDeveloper : Developer
+    class DataProcessor : Job
     {
-        public SeniorDeveloper()
+        public DataProcessor()
         {
-            Name = "Vanem arendaja";
+            Name = "Andmetöötleja";
         }
     }
 }

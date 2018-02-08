@@ -26,6 +26,7 @@ namespace ConsoleApp1
             AllRooms.Add(new Rooms.DataProcessors());
             AllRooms.Add(new Rooms.Developers());
             AllRooms.Add(new Rooms.Kitchen());
+            AllRooms.Add(new Rooms.Lobby());
             AllRooms.Add(new Rooms.Owners());
         }
 
@@ -33,7 +34,7 @@ namespace ConsoleApp1
         {
             AllJobs = new List<Job>();
 
-            AllJobs.Add(new Jobs.DataProcessors());
+            AllJobs.Add(new Jobs.DataProcessor());
             AllJobs.Add(new Jobs.Janitor());
             AllJobs.Add(new Jobs.JuniorDeveloper());
             AllJobs.Add(new Jobs.Owner());
@@ -47,7 +48,7 @@ namespace ConsoleApp1
             {
                 int userInput;
 
-                Console.WriteLine("Mis teie ameti nimi on ?");
+                Console.WriteLine("Mis teie amet on?");
                 Console.WriteLine();
 
                 for (int i = 0; i < AllJobs.Count; i++)
@@ -65,9 +66,9 @@ namespace ConsoleApp1
                 
                 Console.Clear();
 
-                if (userInput > 0 && userInput < AllJobs.Count)
+                if (userInput > 0 && userInput <= AllJobs.Count)
                 {
-                    User.CurrentJob = AllJobs[userInput];
+                    User.CurrentJob = AllJobs[userInput - 1];
                     return;
                 }
                     
@@ -82,11 +83,18 @@ namespace ConsoleApp1
             {
                 int userInput;
 
+                Console.WriteLine("Praegune amet: " + User.CurrentJob.Name);
+                Console.WriteLine("Praegune asukoht: " + User.CurrentRoom.Name);
+
+                Console.WriteLine();
+
                 Console.WriteLine("Kuhu te soovite minna ?");
                 Console.WriteLine();
 
                 for (int i = 0; i < AllRooms.Count; i++)
                     AllRooms[i].PrintName(i);
+
+                Console.WriteLine((AllRooms.Count + 1) + ". Lahkuge");
 
                 try
                 {
@@ -100,10 +108,11 @@ namespace ConsoleApp1
 
                 Console.Clear();
 
-                if (userInput > 0 && userInput < AllRooms.Count)
-                {
+                if (userInput == AllRooms.Count + 1)
+                    return;
 
-                }
+                if (userInput > 0 && userInput <= AllRooms.Count)
+                    User.AccessRoom(AllRooms[userInput - 1]);
             }
         }
 

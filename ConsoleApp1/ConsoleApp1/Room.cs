@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Room
+    abstract class Room
     {
-        protected string Name;
+        public string Name;
         public List<Job> AccessableJobs;
+
+        public abstract void InitializeAccessableJobs();
+
+        public Room()
+        {
+            AccessableJobs = new List<Job>();
+            InitializeAccessableJobs();
+        }
 
         public void PrintName(int count)
         {
@@ -17,9 +25,13 @@ namespace ConsoleApp1
             Console.WriteLine(count + ". " + Name);
         }
 
-        public void IsAccessible(Job checkJob)
+        public virtual bool IsAccessible(Job checkJob)
         {
+            foreach (Job job in AccessableJobs)
+                if (checkJob.Name == job.Name)
+                    return true;
 
+            return false;
         }
     }
 }

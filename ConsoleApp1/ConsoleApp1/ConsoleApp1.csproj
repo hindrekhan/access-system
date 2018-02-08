@@ -43,7 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Job.cs" />
-    <Compile Include="Jobs\DataProcessors.cs" />
+    <Compile Include="Jobs\DataProcessor.cs" />
+    <Compile Include="Jobs\Developer.cs" />
     <Compile Include="Jobs\Janitor.cs" />
     <Compile Include="Jobs\JuniorDeveloper.cs" />
     <Compile Include="Jobs\Owner.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Rooms\DataProcessors.cs" />
     <Compile Include="Rooms\Developers.cs" />
     <Compile Include="Rooms\Kitchen.cs" />
+    <Compile Include="Rooms\Lobby.cs" />
     <Compile Include="Rooms\Owners.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>

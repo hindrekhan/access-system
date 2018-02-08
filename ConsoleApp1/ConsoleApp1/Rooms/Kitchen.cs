@@ -12,5 +12,15 @@ namespace ConsoleApp1.Rooms
         {
             Name = "Köök";
         }
+
+        public override bool IsAccessible(Job checkJob)
+        {
+            return true;
+        }
+
+        public override void InitializeAccessableJobs()
+        {
+            
+        }
     }
 }

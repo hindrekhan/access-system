@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Jobs
 {
-    class DataProcessors : Job
+    class Developer : Job
     {
-        public DataProcessors()
-        {
-            Name = "Andmetöötlejad";
-        }
     }
 }

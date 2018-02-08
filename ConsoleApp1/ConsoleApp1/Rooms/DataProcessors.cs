@@ -12,5 +12,13 @@ namespace ConsoleApp1.Rooms
         {
             Name = "Andmetöötlejate ruum";
         }
+
+        public override void InitializeAccessableJobs()
+        {
+            AccessableJobs.Add(new Jobs.DataProcessor());
+            AccessableJobs.Add(new Jobs.Owner());
+            AccessableJobs.Add(new Jobs.SeniorDeveloper());
+            AccessableJobs.Add(new Jobs.SpecialJanitor());
+        }
     }
 }

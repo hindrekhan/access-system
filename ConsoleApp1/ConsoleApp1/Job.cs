@@ -8,12 +8,14 @@ namespace ConsoleApp1
 {
     class Job
     {
-        protected string Name;
+        public string Name;
 
         public void PrintName(int count)
         {
             count++;
             Console.WriteLine(count + ". " + Name);
         }
+
+        
     }
 }

@@ -11,9 +11,18 @@ namespace ConsoleApp1
         public Room CurrentRoom;
         public Job CurrentJob;
 
+        public User()
+        {
+            CurrentRoom = new Rooms.Lobby();
+        }
+
         public void AccessRoom(Room room)
         {
-            if ()
+            if (room.IsAccessible(CurrentJob))
+                CurrentRoom = room;
+            
+            else
+                Console.WriteLine("Teil pole privileege, et sinna siseneda");
         }
     }
 }

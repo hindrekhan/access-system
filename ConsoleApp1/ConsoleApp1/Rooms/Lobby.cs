@@ -6,18 +6,21 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Rooms
 {
-    class Owners : Room
+    class Lobby : Room
     {
-        public Owners()
+        public Lobby()
         {
-            Name = "Ülemuste tuba";
+            Name = "Esik";
+        }
+
+        public override bool IsAccessible(Job checkJob)
+        {
+            return true;
         }
 
         public override void InitializeAccessableJobs()
         {
-            AccessableJobs.Add(new Jobs.SeniorDeveloper());
-            AccessableJobs.Add(new Jobs.SpecialJanitor());
-            AccessableJobs.Add(new Jobs.Owner());
+            
         }
     }
 }

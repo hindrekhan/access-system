@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Jobs
 {
-    class JuniorDeveloper : Job
+    class JuniorDeveloper : Developer
     {
         public JuniorDeveloper()
         {

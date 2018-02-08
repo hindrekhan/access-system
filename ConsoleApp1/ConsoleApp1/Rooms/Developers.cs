@@ -12,5 +12,14 @@ namespace ConsoleApp1.Rooms
         {
             Name = "Arendajate ruum";
         }
+
+        public override void InitializeAccessableJobs()
+        {
+            AccessableJobs.Add(new Jobs.Janitor());
+            AccessableJobs.Add(new Jobs.JuniorDeveloper());
+            AccessableJobs.Add(new Jobs.Owner());
+            AccessableJobs.Add(new Jobs.SeniorDeveloper());
+            AccessableJobs.Add(new Jobs.SpecialJanitor());
+        }
     }
 }
