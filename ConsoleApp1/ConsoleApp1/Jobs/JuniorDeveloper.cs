@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Jobs
 {
-    class Program
+    class JuniorDeveloper : Job
     {
-        static void Main(string[] args)
+        public JuniorDeveloper()
         {
-            Office office = new Office();
-
-            office.Run();
+            Name = "Noorem arendaja";
         }
     }
 }

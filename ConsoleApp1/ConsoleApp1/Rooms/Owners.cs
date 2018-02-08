@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Rooms
 {
-    class Program
+    class Owners : Room
     {
-        static void Main(string[] args)
+        public Owners()
         {
-            Office office = new Office();
-
-            office.Run();
+            Name = "Ülemuste tuba";
         }
     }
 }

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Program
+    class Job
     {
-        static void Main(string[] args)
-        {
-            Office office = new Office();
+        protected string Name;
 
-            office.Run();
+        public void PrintName(int count)
+        {
+            count++;
+            Console.WriteLine(count + ". " + Name);
         }
     }
 }

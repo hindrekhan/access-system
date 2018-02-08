@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Jobs
 {
-    class Program
+    class Janitor : Job
     {
-        static void Main(string[] args)
+        public Janitor()
         {
-            Office office = new Office();
-
-            office.Run();
+            Name = "Koristaja";
         }
     }
 }

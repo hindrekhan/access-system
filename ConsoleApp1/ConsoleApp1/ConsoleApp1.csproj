@@ -42,8 +42,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Job.cs" />
+    <Compile Include="Jobs\DataProcessors.cs" />
+    <Compile Include="Jobs\Janitor.cs" />
+    <Compile Include="Jobs\JuniorDeveloper.cs" />
+    <Compile Include="Jobs\Owner.cs" />
+    <Compile Include="Jobs\SeniorDeveloper.cs" />
+    <Compile Include="Jobs\SpecialJanitor.cs" />
+    <Compile Include="Office.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="Rooms\DataProcessors.cs" />
+    <Compile Include="Rooms\Developers.cs" />
+    <Compile Include="Rooms\Kitchen.cs" />
+    <Compile Include="Rooms\Owners.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

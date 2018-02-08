@@ -4,15 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Jobs
 {
-    class Program
+    class SeniorDeveloper : Job
     {
-        static void Main(string[] args)
+        public SeniorDeveloper()
         {
-            Office office = new Office();
-
-            office.Run();
+            Name = "Vanem arendaja";
         }
     }
 }

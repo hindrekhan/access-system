@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Program
+    class User
     {
-        static void Main(string[] args)
-        {
-            Office office = new Office();
+        public Room CurrentRoom;
+        public Job CurrentJob;
 
-            office.Run();
+        public void AccessRoom(Room room)
+        {
+            if ()
         }
     }
 }
